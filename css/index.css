@@ -16,9 +16,9 @@ main {
   background-color: #fff;
   border: 1px #fff;
   border-radius: 10px;
-  margin: 7% auto;
+  margin: .5% auto;
   width: 15rem;
-  height: 22.5rem;
+  height: 28.6rem;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
   padding: 4.5em 3em;
 }
@@ -28,35 +28,118 @@ main {
   font-size: 1.4rem;
   font-family: sans-serif, Arial, Helvetica;
 }
-.registro .registro__label{
-    display: block;
-    margin-bottom: .3rem ;
-    margin-left: 18.7px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.registro .registro__label {
+  display: block;
+  margin-bottom: 0.3rem;
+  margin-left: 19.1px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
 }
-input:focus{
-    outline: none;
-}
-
-.registro .registro__input{
-    display: block;
-    margin-left: 20px;
-    margin-bottom: .1rem ;
-    border: .5px solid  #ccc;
-    border-radius: .25rem;
-    transition:  border .5s ease-in-out,box-shadow .15s ease-in-out;;
-    color: #212529;
-    padding: .3rem;
-}
-input[type="text"]:focus{
-    border: .2rem solid  #832f86;
-    border-color:#86b7fe;
-    box-shadow:  0 0 0 0.25rem rgb(13 110 253 / 25%);
-    outline: 0;
+input:focus {
+  outline: none;
 }
 
-.registro .input-radio input{
-
+.registro .registro__input {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 0.1rem;
+  border: 0.5px solid #ccc;
+  border-radius: 0.25rem;
+  transition: border 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #212529;
+  padding: 0.3rem;
+}
+input[type='text']:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  outline: 0;
+}
+select {
+  transition: border 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 0.1rem;
+  cursor: pointer;
+}
+select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  outline: 0;
 }
 
+.registro .input-radio label {
+  color: #000;
+  padding: 5px 15px 5px 51px;
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3 ease;
+}
+.registro .input-radio label:hover {
+  background-color: rgba(0, 116, 217, 0.3);
+}
 
+.registro .input-radio label::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: none;
+  border: 3px solid #0074d9;
+  border-radius: 50%;
+  position: absolute;
+  left: 17px;
+  top: 4px;
+}
+.registro .input-radio input[type='radio'] {
+  display: none;
+}
+
+.registro .input-radio input[type='radio']:checked + label {
+  padding: 5px 15px;
+  background-color: #0074d9;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.registro .input-radio input[type='radio']:checked + label::before {
+  display: none;
+}
+.registro .input-checkbox label {
+  position: relative;
+  padding: .5em;
+}
+.registro .input-checkbox .checkbox-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: .01rem;
+  margin-left: 17px;
+}
+.registro .input-checkbox .checkbox-2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 17px;
+}
+button[type='submit'] {
+  width: 6rem;
+  height: 2rem;
+  margin-left: 4.2rem;
+  margin-top: .7rem;
+  text-align: center;
+  font-family: sans-serif, arial;
+  background-color: #3866f2;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+  pad: 0.8em 0;
+  border-radius: 0.5em;
+  border: none;
+  transition: all 1s;
+  cursor: pointer;
+}
+button[type='submit']:hover {
+  color: #000;
+  background-color: #fff;
+  border: .5px solid #3866f2;
+}
