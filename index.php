@@ -41,10 +41,10 @@
 
             <label for="input-radio" class="registro__label"> Género:</label>
             <div class="input-radio">
-                <label for="M" class="radio__label">Masculino</label>
                 <input type="radio" id="M" name="genero" id="masculino" value="Masculino">
-                <label for="F" class="radio__label">Femenino</label>
+                <label for="M" class="radio__label">Masculino</label>
                 <input type="radio" id="F" name="genero" id="femenino" value="Femenino">
+                <label for="F" class="radio__label">Femenino</label>
             </div>
 
             <label for="input-checkbox" class="registro__label">Hobbies:</label>
