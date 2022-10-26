@@ -2,3 +2,5 @@ connection/
 .vscode/
 .prettierignore
 .prettierrc.js
+registrar.php
+registro2.php

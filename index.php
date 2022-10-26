@@ -14,8 +14,7 @@
 </head>
 
 <body>
-    <main>
-        <form action="" class="registro">
+        <form action="" class="registro" method="post">
             <h2 class="registro-titulo">Registra tus datos</h2>
 
             <label for="nombre" class="registro__label">Clave:</label>
@@ -32,8 +31,8 @@
             <input type="text" name="edad" id="edad" class="registro__input" placeholder="edad" required onkeypress="return valideKey(event);">
 
             <label for="speciality" class="registro__label">Especialidad</label>
-            <select name="speciality" id="speciality" class="registro__input">
-                <option disabled>Selecciona una opción</option>
+            <select name="carrera" id="speciality" class="registro__input">
+                <option selected disabled>Selecciona una opción</option>
                 <option value="TP">Técnico en programación</option>
                 <option value="TPV">Técnico en prendas de vestir</option>
                 <option value="TMI">Técnico en matenimineto</option>
@@ -71,9 +70,11 @@
                     <input type="checkbox" name="hobby" id="dormir" value="dormir">
                 </div>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" name="register">Enviar</button>
         </form>
-    </main>
+        <?php
+              include('registrar.php');
+        ?>
 
 
 
