@@ -14,7 +14,7 @@
 </head>
 
 <body>
-        <form action="" class="registro" method="post">
+        <form action="registro2.php" class="registro" method="post">
             <h2 class="registro-titulo">Registra tus datos</h2>
 
             <label for="nombre" class="registro__label">Clave:</label>
@@ -49,35 +49,38 @@
             <label for="input-checkbox" class="registro__label">Hobbies:</label>
             <div class="input-checkbox">
                 <div class="checkbox-1">
-                    <label for="deporte">Deporte</label>
-                    <input type="checkbox" name="hobby" id="deporte" value="deporte">
+                    <input type="checkbox" name="hobby[]" id="deporte" value="deporte">
+                    <label for="deporte">Deporte</label> 
+                    
 
+                    <input type="checkbox" name="hobby[]" id="musica" value="musica">
                     <label for="musica">Musica</label>
-                    <input type="checkbox" name="hobby" id="musica" value="musica">
+                    
+                   
 
+                    <input type="checkbox" name="hobby[]" id="nadar" value="nadar">
                     <label for="nadar">Nadar</label>
-                    <input type="checkbox" name="hobby" id="nadar" value="nadar">
+                    
+                    
 
                 </div>
                 <div class="checkbox-2">
+                    <input type="checkbox" name="hobby[]" id="correr" value="correr">
                     <label for="correr">Correr</label>
-                    <input type="checkbox" name="hobby" id="correr" value="correr">
+                    
+                    
 
+                    <input type="checkbox" name="hobby[]" id="leer" value="leer">
                     <label for="leer">Leer</label>
-                    <input type="checkbox" name="hobby" id="leer" value="leer">
-
+                    
+                    <input type="checkbox" name="hobby[]" id="dormir" value="dormir">
                     <label for="dormir">Dormir</label>
-                    <input type="checkbox" name="hobby" id="dormir" value="dormir">
+                    
+                    
                 </div>
             </div>
             <button type="submit" name="register">Enviar</button>
         </form>
-        <?php
-              include('registrar.php');
-        ?>
-
-
-
     <script src="js/main.js"></script>
 </body>
 

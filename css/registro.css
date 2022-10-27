@@ -1,0 +1,26 @@
+body{
+    background-color: #9d9dad;
+    background-image: radial-gradient(#832f86 0.5px, transparent 0.5px),
+      radial-gradient(#832f86 0.5px, #9d9dad 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+.okey{
+   font-size: 3rem;
+   text-align: center;
+   margin-top: 20%;
+}
+a .like{
+  width: 3rem;
+  height: 3rem;
+  margin-left: 48%;
+  transition: all .5s;
+}
+
+a .like:hover{
+  box-shadow: -5px 23px 77px 30px rgba(255,255,255,0.75);
+  -webkit-box-shadow: -5px 23px 77px 30px rgba(255,255,255,0.75);
+  -moz-box-shadow: -5px 23px 77px 30px rgba(255,255,255,0.75);
+  border: none;
+  border-radius: 10px;
+}
