@@ -14,7 +14,7 @@
 </head>
 
 <body>
-        <form action="registro2.php" class="registro" method="post">
+        <form action="registrar.php" class="registro" method="post">
             <h2 class="registro-titulo">Registra tus datos</h2>
 
             <label for="nombre" class="registro__label">Clave:</label>

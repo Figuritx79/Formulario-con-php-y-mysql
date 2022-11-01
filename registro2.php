@@ -16,7 +16,7 @@
       <?php
       error_reporting(0);
       include("connection/connec.php");
-
+      
       $clave = $_POST['clave'];
       $nombres = $_POST['nombre'];
       $apellidos = $_POST['apellido'];
